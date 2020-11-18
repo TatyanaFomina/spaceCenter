@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+}
+
+.container {
+  box-sizing: content-box;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+p,
+ul {
+  margin: 0 0 10px 0;
+}
+
+* + p,
+* + ul {
+  margin-top: 10px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover,
+.logo:hover,
+.logo:hover a {
+  text-decoration: none;
+  color: #f6bb66;
+}
+
+.logo:hover {
+  border-color: #f6bb66;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.dark-section {
+  color: #ffffff;
+}
+
+.light-section {
+  color: #0b013c;
+  background-color: #fefaf3;
+}
+
+.light-section .header-subtitle,
+.light-section .card-description {
+  color: #111111;
+}
+
+.light-section .main-content {
+  color: #808080;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header::after {
+  content: ' ';
+  display: inline-block;
+  width: 60px;
+  height: 6px;
+  background-color: #f8cb8a;
+  margin-top: 20px;
+}
+
+.overlayer {
+  background-color: #0b013c;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.section-background {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.section-foreground {
+  padding: 10px 10px 100px;
+  position: relative;
+  height: 100%;
+}
+
+.logo {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  padding: 0 6px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.header,
+.section-educational-complex,
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  height: 100vh;
+}
+
+.header img,
+.section-educational-complex img {
+  height: 100%;
+}
+
+.header-subtitle {
+  font-size: 15px;
+}
+
+.hero {
+  padding: 60px 0 10px;
+}
+
+.hero-header {
+  font-size: 16px;
+}
+
+.hero-text {
+  font-style: italic;
+  width: 350px;
+  line-height: 1.5;
+}
+
+.form {
+  display: flex;
+  width: 600px;
+}
+
+.input {
+  padding: 10px 5px;
+  margin-right: 10px;
+  border: 2px solid transparent;
+  width: 300px;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid #f6bb66;
+}
+
+.input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  color: #808080;
+  font-size: 12px;
+}
+
+.button {
+  color: #111111;
+  background-color: #f8cb8a;
+  border: none;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+.button:hover {
+  background-color: #f6bb66;
+}
+
+.section-about-education {
+  padding: 50px 0 50px;
+}
+
+.section-about-education .main-content {
+  padding: 15px 95px 0;
+}
+
+.article-right .main-content {
+  padding: 15px 0 0;
+}
+
+.main-content {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.article {
+  background-color: #ffffff;
+  display: flex;
+  margin: 100px 0 80px;
+}
+
+.article-left {
+  width: 70%;
+}
+.article-right {
+  width: 30%;
+  padding: 20px;
+}
+
+.article-right .main-content,
+.article-right .section-header {
+  text-align: left;
+}
+
+.article-right .main-content {
+  width: auto;
+}
+
+.section-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 45%;
+  background-color: white;
+}
+
+.card-description {
+  padding: 10px;
+  font-style: italic;
+}
+
+.section-educational-complex {
+  padding: 100px 0 10px;
+}
+
+.section-educational-complex .main-content {
+  padding: 15px 110px;
+}
+
+.section-educational-complex .section-header {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.list-info {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.list-info li {
+  margin-bottom: 2px;
+}
+
+.footer {
+  background-image: url(../img/footer-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer .section-foreground {
+  padding: 110px 0 80px;
+}
+
+.footer-img {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+
+.footer-img img {
+  width: auto;
+}
+
+.right-contact-info {
+  position: relative;
+}
